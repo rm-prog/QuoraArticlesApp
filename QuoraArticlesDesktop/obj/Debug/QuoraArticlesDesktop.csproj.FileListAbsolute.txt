@@ -1,0 +1,10 @@
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\bin\Debug\QuoraArticlesDesktop.exe.config
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\bin\Debug\QuoraArticlesDesktop.exe
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\bin\Debug\QuoraArticlesDesktop.pdb
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.csproj.AssemblyReference.cache
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.Form1.resources
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.Properties.Resources.resources
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.csproj.GenerateResource.cache
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.exe
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.pdb

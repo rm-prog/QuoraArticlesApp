@@ -125,7 +125,7 @@ def main(after_date_of_email):
             elif msg_part["headers"][15]["value"] == "Quora Digest <english-personalized-digest@quora.com>":
                 english_questions.append(get_english_questions(msg_part))
 
-        # Store them in json file
+        # Store them in JSON file
         with open('../quora_articles_hidden_files/questions_links.json', 'r+', encoding='utf_8_sig') as f:
             data = json.load(f)
             data['english_question'].append(english_questions)
@@ -141,5 +141,6 @@ def main(after_date_of_email):
 
 
 if __name__ == '__main__':
+    # Input after date when executing the script
     after_date = sys.argv[1]
     main(after_date)
