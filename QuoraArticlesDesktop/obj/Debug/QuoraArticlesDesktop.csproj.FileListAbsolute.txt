@@ -8,3 +8,6 @@ C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesk
 C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.csproj.CoreCompileInputs.cache
 C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.exe
 C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.pdb
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rikardo\Documents\programming\python\QuoraArticlesApp\QuoraArticlesDesktop\obj\Debug\QuoraArticlesDesktop.csproj.CopyComplete

@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace QuoraArticlesDesktop
 {
@@ -17,12 +19,14 @@ namespace QuoraArticlesDesktop
             InitializeComponent();
         }
 
+        // When article link is clicked, it sends you to the url
         private void ClickedLink(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e, string link)
         {
             System.Diagnostics.Process.Start(link);
         }
 
-        public void createNewPanel(string question, string link)
+        // create new ArticlePanel
+        public void createArticlePanel(string question, string link)
         {
             // Create new Panel with the ArticleQuestion and Link
             Panel ArticlePanel = new Panel();
@@ -53,7 +57,20 @@ namespace QuoraArticlesDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            createNewPanel("Question from Quora", "https://www.quora.com");
+            createArticlePanel("Question from Quora", "https://www.quora.com");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\test_array.json"))
+            {
+                string json = r.ReadToEnd();
+                dynamic array = JsonConvert.DeserializeObject(json);
+                foreach(var article in array)
+                {
+                    createArticlePanel(Convert.ToString(article[0]), Convert.ToString(article[1]));
+                }
+            }
         }
     }
 }
