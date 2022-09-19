@@ -62,11 +62,56 @@ namespace QuoraArticlesDesktop
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\test_array.json"))
+            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\questions_links.json"))
             {
                 string json = r.ReadToEnd();
                 dynamic array = JsonConvert.DeserializeObject(json);
-                foreach(var article in array)
+                foreach(var article in array["english_question"])
+                {
+                    createArticlePanel(Convert.ToString(article[0]), Convert.ToString(article[1]));
+                }
+            }
+        }
+
+        private void english_articles_button_Click(object sender, EventArgs e)
+        {
+            // Read JSON files with Articles and Links
+            // Display English Articles in Flow Layout Panel
+            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\questions_links.json"))
+            {
+                string json = r.ReadToEnd();
+                dynamic array = JsonConvert.DeserializeObject(json);
+                foreach (var article in array["english_question"])
+                {
+                    createArticlePanel(Convert.ToString(article[0]), Convert.ToString(article[1]));
+                }
+            }
+        }
+
+        private void german_articles_button_Click(object sender, EventArgs e)
+        {
+            // Read JSON files with Articles and Links
+            // Display German Articles in Flow Layout Panel
+            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\questions_links.json"))
+            {
+                string json = r.ReadToEnd();
+                dynamic array = JsonConvert.DeserializeObject(json);
+                foreach (var article in array["german_question"])
+                {
+                    createArticlePanel(Convert.ToString(article[0]), Convert.ToString(article[1]));
+                }
+            }
+        }
+
+        private void polish_articles_button_Click(object sender, EventArgs e)
+        {
+            // Read JSON files with Articles and Links
+            // Display German Articles in Flow Layout Panel
+            using (StreamReader r = new StreamReader(@"C:\Users\Rikardo\Documents\programming\python\quora_articles_hidden_files\questions_links.json"))
+            {
+                string json = r.ReadToEnd();
+                dynamic array = JsonConvert.DeserializeObject(json);
+                foreach (var article in array["polish_question"])
                 {
                     createArticlePanel(Convert.ToString(article[0]), Convert.ToString(article[1]));
                 }

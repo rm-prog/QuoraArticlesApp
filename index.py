@@ -33,7 +33,7 @@ def get_german_questions (msg_part):
     del links[-1]
     del links[-1]
 
-    return tuple(zip(questions, links))
+    return list(zip(questions, links))
 
 def get_polish_questions (msg_part):
     
@@ -50,7 +50,7 @@ def get_polish_questions (msg_part):
     del links[-1]
     del links[-1]
 
-    return tuple(zip(questions, links))
+    return list(zip(questions, links))
 
 def get_english_questions (msg_part):
     
@@ -66,7 +66,7 @@ def get_english_questions (msg_part):
 
     del links[-1]
 
-    return tuple(zip(questions, links))
+    return list(zip(questions, links))
 
 
 # Main Function
@@ -119,18 +119,18 @@ def main(after_date_of_email):
             # Check the language and call the function to extract the questions
             # and links according to the language
             if msg_part["headers"][15]["value"] == "Quora Digest <german-personalized-digest@quora.com>":
-                german_questions.append(get_german_questions(msg_part))
+                german_questions += get_german_questions(msg_part)
             elif msg_part["headers"][15]["value"] == "Quora Digest <polish-personalized-digest@quora.com>":
-                polish_questions.append(get_polish_questions(msg_part))
+                polish_questions += get_polish_questions(msg_part)
             elif msg_part["headers"][15]["value"] == "Quora Digest <english-personalized-digest@quora.com>":
-                english_questions.append(get_english_questions(msg_part))
+                english_questions += get_english_questions(msg_part)
 
         # Store them in JSON file
         with open('../quora_articles_hidden_files/questions_links.json', 'r+', encoding='utf_8_sig') as f:
             data = json.load(f)
-            data['english_question'].append(english_questions)
-            data['german_question'].append(german_questions)
-            data['polish_question'].append(polish_questions)
+            data['english_question'] += english_questions
+            data['german_question'] += german_questions
+            data['polish_question'] += polish_questions
             f.seek(0)        # <--- should reset file position to the beginning.
             json.dump(data, f, indent=4)
             f.truncate()     # remove remaining part

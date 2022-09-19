@@ -31,9 +31,12 @@ namespace QuoraArticlesDesktop
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.english_articles_button = new System.Windows.Forms.Button();
+            this.german_articles_button = new System.Windows.Forms.Button();
+            this.polish_articles_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +55,9 @@ namespace QuoraArticlesDesktop
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.polish_articles_button);
+            this.panel1.Controls.Add(this.german_articles_button);
+            this.panel1.Controls.Add(this.english_articles_button);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
@@ -60,6 +66,26 @@ namespace QuoraArticlesDesktop
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1044, 62);
             this.panel1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(923, 25);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(801, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -72,25 +98,35 @@ namespace QuoraArticlesDesktop
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1044, 481);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
-            // button1
+            // english_articles_button
             // 
-            this.button1.Location = new System.Drawing.Point(659, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.english_articles_button.Location = new System.Drawing.Point(380, 12);
+            this.english_articles_button.Name = "english_articles_button";
+            this.english_articles_button.Size = new System.Drawing.Size(91, 36);
+            this.english_articles_button.TabIndex = 3;
+            this.english_articles_button.Text = "English Articles";
+            this.english_articles_button.UseVisualStyleBackColor = true;
+            this.english_articles_button.Click += new System.EventHandler(this.english_articles_button_Click);
             // 
-            // button2
+            // german_articles_button
             // 
-            this.button2.Location = new System.Drawing.Point(789, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.german_articles_button.Location = new System.Drawing.Point(477, 13);
+            this.german_articles_button.Name = "german_articles_button";
+            this.german_articles_button.Size = new System.Drawing.Size(91, 36);
+            this.german_articles_button.TabIndex = 4;
+            this.german_articles_button.Text = "German Articles";
+            this.german_articles_button.UseVisualStyleBackColor = true;
+            this.german_articles_button.Click += new System.EventHandler(this.german_articles_button_Click);
+            // 
+            // polish_articles_button
+            // 
+            this.polish_articles_button.Location = new System.Drawing.Point(574, 13);
+            this.polish_articles_button.Name = "polish_articles_button";
+            this.polish_articles_button.Size = new System.Drawing.Size(91, 36);
+            this.polish_articles_button.TabIndex = 5;
+            this.polish_articles_button.Text = "Polish Articles";
+            this.polish_articles_button.UseVisualStyleBackColor = true;
+            this.polish_articles_button.Click += new System.EventHandler(this.polish_articles_button_Click);
             // 
             // Form1
             // 
@@ -116,6 +152,9 @@ namespace QuoraArticlesDesktop
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button polish_articles_button;
+        private System.Windows.Forms.Button german_articles_button;
+        private System.Windows.Forms.Button english_articles_button;
     }
 }
 
