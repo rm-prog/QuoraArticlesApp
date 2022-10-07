@@ -72,7 +72,6 @@ def get_english_questions (msg_part):
 # Main Function
 # @param after_date_email: date after which will search for emails
 
-
 def main(after_date_of_email):
     # Authentication
     """Shows basic usage of the Gmail API.
